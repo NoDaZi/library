@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Bookrecord {
-     String name,type;
+    String name,type;
     public int id;
     ArrayList names =new ArrayList();
-     ArrayList types =new ArrayList();
-      ArrayList ids =new ArrayList();
+    ArrayList types =new ArrayList();
+    ArrayList ids =new ArrayList();
           
  public  void  bookread() throws FileNotFoundException{
     File inputFile=new File("books.txt");
@@ -23,7 +23,7 @@ public class Bookrecord {
             id = in.nextInt();
             ids.add(id);
         }
-        /*for(int i=0;i<names.size();i++) //들어갔는지 확인용
+        /*for(int i=0;i<names.size();i++) //
         {
         System.out.println(names.get(i));
          System.out.println(types.get(i));
